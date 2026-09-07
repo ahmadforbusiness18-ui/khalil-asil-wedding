@@ -1,0 +1,3 @@
+import { useRef, useState } from 'react'
+import { Music2, VolumeX } from 'lucide-react'
+export default function MusicToggle(){ const audio=useRef(null); const [on,setOn]=useState(false); const toggle=async()=>{try{if(!audio.current) return;if(on){audio.current.pause();setOn(false)}else{await audio.current.play();setOn(true)}}catch{setOn(false)}}; return <><audio ref={audio} loop preload="none" src="/music/wedding-placeholder.wav"/><button onClick={toggle} aria-label={on?'Turn music off':'Turn music on'} className="fixed bottom-5 right-5 z-40 grid h-11 w-11 place-items-center rounded-full border border-[#ead8aa]/25 bg-[#17120f]/70 text-[#ead8aa] backdrop-blur-xl">{on?<Music2 size={17}/>:<VolumeX size={17}/>}</button></> }

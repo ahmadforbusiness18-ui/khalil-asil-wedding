@@ -1,0 +1,161 @@
+@import "tailwindcss";
+
+:root {
+  --cream: #F5EBDD;
+  --purple: #2E2140;
+
+  --gold: #C89B4A;
+  --brown: #3B2A1E;
+  --cream-text: #F0E2C8;
+
+  --gold-dark: #A9823D;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: var(--cream);
+}
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--brown);
+  font-family: 'DM Sans', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: rgba(200, 155, 74, 0.25);
+  color: var(--brown);
+}
+
+/* Sections */
+section {
+  background: var(--cream);
+  color: var(--brown);
+}
+
+/* Typography */
+.font-display {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.font-script {
+  font-family: 'Great Vibes', cursive;
+}
+
+.text-gold {
+  color: var(--gold);
+}
+
+.bg-ivory {
+  background: var(--cream);
+  color: var(--brown);
+}
+
+/* Dark sections */
+.dark-section {
+  background: var(--purple);
+  color: var(--cream-text);
+}
+
+/* Main width */
+.section-shell {
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+/* Gold line */
+.gold-line {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(200, 155, 74, 0.7),
+    transparent
+  );
+}
+
+/* Luxury cards */
+.glass {
+  background: rgba(255, 255, 255, 0.28);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(200, 155, 74, 0.25);
+}
+
+/* Inputs */
+input,
+select,
+textarea {
+  outline: none;
+  color: var(--brown);
+  background: rgba(255, 255, 255, 0.4);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: rgba(59, 42, 30, 0.55);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  box-shadow: 0 0 0 1px rgba(200, 155, 74, 0.6);
+  border-color: rgba(200, 155, 74, 0.6) !important;
+}
+
+/* Animations */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-120%);
+  }
+
+  100% {
+    transform: translateX(120%);
+  }
+}
+
+.float {
+  animation: float 5s ease-in-out infinite;
+}
+
+.shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.shimmer::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  width: 35%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.25),
+    transparent
+  );
+  animation: shimmer 3s infinite;
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .section-shell {
+    width: min(100% - 28px, 1180px);
+  }
+}
