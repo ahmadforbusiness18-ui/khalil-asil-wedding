@@ -15,16 +15,16 @@ export const wedding = {
     { year: '05', title: 'The Wedding Day', text: 'And now, surrounded by the people we love most, we begin the next chapter together.' },
   ],
   gallery: [
-    { src: '/images/wedding-photo.jpg', alt: 'Khalil & Asil', caption: 'Khalil & Asil' },
+   { src: '/khalil-asil-wedding/images/wedding-photo.jpg', alt: 'Khalil & Asil', caption: 'Khalil & Asil' },
     { 
-  src: '/images/wedding-photo-3.jpg',
+  src: '/khalil-asil-wedding/images/wedding-photo-3.jpg',
   alt: 'Khalil & Asil', 
   caption: 'Khalil & Asil' 
 },
-    { src: '/images/wedding-photo-6.jpeg', alt: 'Jordanian ruins at sunset', caption: 'A timeless place' },
-    { src: '/images/amman-sunset.jpg', alt: 'Warm sunset landscape', caption: 'Where memories begin' },
-    { src: '/images/wedding-photo-4.jpeg', alt: 'Petra architecture', caption: 'A golden beginning' },
-    { src: '/images/wedding-photo-5.jpg', alt: 'Ancient columns', caption: 'Forever, framed in gold' },
+    { src: '/khalil-asil-wedding/images/wedding-photo-6.jpeg', alt: 'Jordanian ruins at sunset', caption: 'A timeless place' },
+    { src: '/khalil-asil-wedding/images/amman-sunset.jpg', alt: 'Warm sunset landscape', caption: 'Where memories begin' },
+    { src: '/khalil-asil-wedding/images/wedding-photo-4.jpeg', alt: 'Petra architecture', caption: 'A golden beginning' },
+    { src: '/khalil-asil-wedding/images/wedding-photo-5.jpg', alt: 'Ancient columns', caption: 'Forever, framed in gold' },
   ],
 }
 
