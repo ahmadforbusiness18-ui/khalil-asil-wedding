@@ -101,30 +101,6 @@ function EventCard({ event }) {
         </div>
       </div>
 
-      {/* Buttons */}
-      <div className="mt-10 flex flex-wrap justify-center gap-3">
-
-        <a
-          target="_blank"
-          rel="noreferrer"
-          href="https://www.google.com/maps/search/?api=1&query=Amman%2C%20Jordan"
-          className="inline-flex items-center gap-2 border border-[#C89B4A]/50 bg-[#C89B4A] px-5 py-3 text-[10px] uppercase tracking-[.25em] text-[#F0E2C8] transition duration-300 hover:bg-[#A9823D]"
-        >
-          <Navigation size={14} />
-          View on Maps
-        </a>
-
-        <a
-          target="_blank"
-          rel="noreferrer"
-          href="https://www.google.com/maps/dir/?api=1&destination=Amman%2C%20Jordan"
-          className="inline-flex items-center gap-2 border border-[#C89B4A]/50 px-5 py-3 text-[10px] uppercase tracking-[.25em] text-[#3B2A1E] transition duration-300 hover:bg-[#F0E2C8]"
-        >
-          Get Directions
-        </a>
-
-      </div>
-
       <p className="mt-7 text-center font-display text-lg italic text-[#3B2A1E]/70">
         Details of the venue and time to follow soon
       </p>
