@@ -9,7 +9,7 @@ export default function Opening({ onOpen, guestName }) {
       id="home"
     >
       <img
-        src="/khalil-asil-wedding/images/hero.jpg"
+        src="/khalil-asil-wedding/images/hero.png"
         alt="Khalil & Asil wedding invitation in Petra"
         className="absolute inset-0 h-full w-full object-cover object-[60%_center] sm:object-center"
         fetchPriority="high"
